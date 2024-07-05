@@ -1,0 +1,21 @@
+ion-card {
+    margin: 10px; /* Adjust margin spacing */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  ion-card-header {
+    text-align: center; /* Center align card header */
+  }
+  
+  ion-card-content {
+    padding: 10px; /* Padding inside the card content */
+  }
+  
+  ion-img {
+    height: 200px; /* Set a fixed height for product images */
+    object-fit: cover; /* Cover image without stretching */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
