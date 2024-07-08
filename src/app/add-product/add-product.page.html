@@ -1,0 +1,22 @@
+<ion-content class="ion-padding">
+  <div class="content-container">
+    <h1 class="page-title">Add Product</h1>
+
+    <ion-card>
+      <ion-card-content>
+        <form (ngSubmit)="onSubmit()">
+          <ion-input type="text" [(ngModel)]="productName" name="productName" placeholder="Product Name" required></ion-input>
+          <ion-input type="number" [(ngModel)]="productPrice" name="productPrice" placeholder="Price" step="0.01" required></ion-input>
+          <ion-textarea [(ngModel)]="productDescription" name="productDescription" placeholder="Description" rows="4" required></ion-textarea>
+          
+          <div class="file-input-container">
+            <label class="file-input-label">Product Image</label>
+            <input type="file" class="file-input" (change)="onFileChange($event)" accept="image/*" required>
+          </div>
+
+          <ion-button expand="block" type="submit">Add Product</ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,107 @@
+/* add-product.page.scss */
+ion-content {
+    --background: #f4f5f8;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--ion-color-dark);
+  }
+  
+  ion-card {
+    width: 100%;
+    margin: 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-card-content {
+    padding: 1.5rem;
+  }
+  
+  ion-input, ion-textarea {
+    --padding-start: 1rem;
+    --padding-end: 1rem;
+    --placeholder-color: var(--ion-color-medium);
+    --placeholder-opacity: 0.8;
+    font-size: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+  }
+  
+  ion-input {
+    height: 3rem;
+  }
+  
+  ion-textarea {
+    --padding-top: 0.5rem;
+    --padding-bottom: 0.5rem;
+  }
+  
+  .file-input-container {
+    margin-bottom: 1rem;
+  }
+  
+  .file-input-label {
+    font-size: 1rem;
+    color: var(--ion-color-medium);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .file-input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--ion-color-light);
+    border-radius: 8px;
+    background: #ffffff;
+  }
+  
+  ion-button {
+    margin-top: 1.5rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    ion-content {
+      --background: #121212;
+    }
+  
+    .page-title {
+      color: var(--ion-color-light);
+    }
+  
+    ion-card {
+      background: #1e1e1e;
+    }
+  
+    ion-input, ion-textarea, .file-input {
+      background: #2a2a2a;
+      color: #ffffff;
+      --placeholder-color: var(--ion-color-medium-shade);
+    }
+  
+    .file-input-label {
+      color: var(--ion-color-light);
+    }
+  }
